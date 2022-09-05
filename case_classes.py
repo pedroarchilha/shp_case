@@ -78,12 +78,20 @@ def main_menu():
     print("[1] Seller Options")
     print("[2] Customer Options")
     print("[3] Sales Options")
+    print("[0] Finsh the program")
 
     option = ""
-    if option == "1":
-        seller_options()
-    elif option == "2":
-        customer_options()
+    while option != "0"
+        if option == "1":
+            seller_options()
+        elif option == "2":
+            customer_options()
+        elif option == "3":
+            sales_options()
+        elif option == "0"
+            break
+
+        option = input(":> ")
 
 
 def seller_options():
@@ -91,17 +99,42 @@ def seller_options():
     print("[2] Register new sale")
     print("[3] Remove item")
     print("[4] Main menu")
+    print("[0] Finsh the program")
 
-    option = ""
-    if option == "4":
-        main_menu()
+
+    while option != "0"
+        option = ""
+        if option == "4":
+            main_menu()
+
+        option = input(":> ")
 
 
 def customer_options():
     print("[1] Register new customer")
     print("[2] Remove customer")
-    print("[3] Main Menu")
+    print("[3] Edit Customer")
+    print("[4] Main Menu")
+    print("[0] Finsh the program")
 
-    option = ""
-    if option == "3":
-        main_menu()
+    while option != "0"
+        option = ""
+        if option == "4":
+            main_menu()
+
+        option = input(":> ")
+
+
+def sales_options():
+    print("[1] Show  sales by seller name")
+    print("[2] Show sales by item name")
+    print("[3] Register new seller")
+    print("[4] Main Menu")
+    print("[0] Finsh the program")
+
+    while option != "0"
+        option = ""
+        if option == "4":
+            main_menu()
+
+        option = input(":> ")
