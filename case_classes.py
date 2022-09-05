@@ -71,4 +71,37 @@ def find_object(item, object_list):
     return item
 
 
-#TODO create a method for new Seller registration
+# TODO create a method for new Seller registration
+
+
+def main_menu():
+    print("[1] Seller Options")
+    print("[2] Customer Options")
+    print("[3] Sales Options")
+
+    option = ""
+    if option == "1":
+        seller_options()
+    elif option == "2":
+        customer_options()
+
+
+def seller_options():
+    print("[1] Register new product")
+    print("[2] Register new sale")
+    print("[3] Remove item")
+    print("[4] Main menu")
+
+    option = ""
+    if option == "4":
+        main_menu()
+
+
+def customer_options():
+    print("[1] Register new customer")
+    print("[2] Remove customer")
+    print("[3] Main Menu")
+
+    option = ""
+    if option == "3":
+        main_menu()
